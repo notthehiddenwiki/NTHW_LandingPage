@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Not The Hidden Wiki</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+  <main>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="NTHW" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="NTHW">Not The Hidden Wiki</h1>
+          <p class="title">Developed by miblak</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show More</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+              <a href="https://github.com/notthehiddenwiki" class="contact-link">notthehiddenwiki</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-discord"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Discord</p>
+
+              <a href="https://discord.gg/fjwzWFWuzg" class="contact-link">Invite</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Twitter</p>
+
+              <a href="https://twitter.com/NotHiddenWiki" class="contact-link">NotHiddenWiki</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Project Start</p>
+
+              <time datetime="1982-06-23">December 12, 2023</time>
+            </div>
+
+          </li>
+          
+        </ul>
+
+        
+      </div>
+
+      <div class="filter-select-box">
+        <div class="filter-select" data-select>
+        </div>
+      </div>
+      
+    </aside>
+
+    <div class="main-content">
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Categories</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Hall of Fame</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Cybersecurity Stars</button>
+          </li>
+        </ul>
+      </nav>
+       
+      <article class="about  active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About Project</h2>
+        </header>
+        
+        <section class="about-text">
+
+          <p>
+            You are at <b>Not The Hidden Wiki</b>. The project was created because we believe that <b>knowledge should be free!</b><br> 
+            So we collected many valuable links from various specialists in their fields and created this wiki. 
+            Regardless of whether you are just starting your adventure with cybersecurity or you have been in this world for a long time, you will definitely find something for yourself on our <b>GitHub</b>.
+          </p>
+
+          <p>
+            This website cannot exist without you! So if you want to contribute to expanding the database of links with useful knowledge 
+            (these may be tools, publications, recordings, etc.), send the list to: <b>notthehiddenwiki@firemail.cc</b> or write to me on Discord (<b>@miblak</b>). 
+            The website will be constantly developed. If a category doesn’t exist, it doesn’t mean it won’t exist! Contact us at the address provided earlier and we will definitely add a new category! 
+          </p>
+
+          <p>
+            As a thank you, you will be added to the <b>Hall of Fame</b> list where, apart from your nickname, 
+            I can link your social media/website or whatever you think is appropriate!
+          </p>
+
+          <h2 class="h3 article-title">Milestones</h2>
+
+          Here you will find information about the project's <b>achievements:</b><br><br>
+          <span>&#8226; 12.12.2023 - <b>The project is online</b><br></span> 
+          <span>&#8226; 13.12.2023 - 250 links on our website<br></span> 
+          <span>&#8226; 19.12.2023 - 500 links on our website<br></span> 
+          <span>&#8226; 27.12.2023 - Official Twitter was created<br></span> 
+          <span>&#8226; 29.12.2023 - 1000 links on our website<br></span>
+          <span>&#8226; 11.01.2024 - We are on GitHub<br></span> 
+        </section>
+
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </section>
+        </div>
+      </article>
+
+
+      <article class="about" data-page="categories">
+        <header>
+          <h2 class="h2 article-title">Categories</h2>
+        </header>
+
+        <section class="about-text">
+          <section class="service">
+
+            <h4 class="h4 service-title">Topic related to Red Team</h4>
+  
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/forest.png" alt="design icon" width="20">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Active Directory</h4>
+                  <p class="service-item-text">
+                    <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Red%20Team/Active%20Directory">Learn how to hack Active Directory</a>
+                  </p>
+                </div>
+              </li>
+  
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/bug_report.png" alt="design icon" width="20">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Malware</h4>
+                  <p class="service-item-text">
+                    <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Red%20Team/Malware">Learn Malware development</a>
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/language.png" alt="design icon" width="20">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web Hacking</h4>
+                  <p class="service-item-text">
+                    <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Red%20Team/Web%20Hacking">Learn how to hack Web Applications</a>
+                  </p>
+                </div>
+              </li>
+  
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/skull.png" alt="design icon" width="20">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Binary PWN</h4>
+                  <p class="service-item-text">
+                    <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Red%20Team/Binary%20PWN">Learn Binary PWN</a>
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/badge.png" alt="design icon" width="20">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Privilege Escalation</h4>
+                  <p class="service-item-text">
+                    <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Red%20Team/Privilege%20Escalation">Learn how to do Privilege Escalation</a>
+                  </p>
+                </div>
+              </li>
+  
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/smartphone.png" alt="design icon" width="20">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile</h4>
+                  <p class="service-item-text">
+                    <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Red%20Team/Mobile">Learn how to hack mobile devices</a>
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/lightbulb.png" alt="design icon" width="20">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Anonymity</h4>
+                  <p class="service-item-text">
+                    <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Red%20Team/Anonymity">Learn how to be anonymous</a>
+                  </p>
+                </div>
+              </li>
+  
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/dns.png" alt="design icon" width="20">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">C2</h4>
+                  <p class="service-item-text">
+                    <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Red%20Team/C2">Best Command & Control</a>
+                  </p>
+                </div>
+              </li>
+  
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/explosion.png" alt="design icon" width="20">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Exploit</h4>
+                  <p class="service-item-text">
+                    <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Red%20Team/Exploit">Learn how to write exploit</a>
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/factory.png" alt="design icon" width="20">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">ICS</h4>
+                  <p class="service-item-text">
+                    <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Red%20Team/ICS">Learn how to hack ICS</a>
+                  </p>
+                </div>
+              </li>
+  
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/tag.png" alt="design icon" width="20">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Cracking</h4>
+                  <p class="service-item-text">
+                    <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Red%20Team/Cracking">Learn how to crack hash</a>
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/wifi.png" alt="design icon" width="20">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">WiFi </h4>
+                  <p class="service-item-text">
+                    <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Red%20Team/WiFi">Learn how to hack WiFi</a>                  
+                  </p>
+                </div>
+              </li>
+  
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/data_loss_prevention.png" alt="design icon" width="20">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">OSINT</h4>
+                  <p class="service-item-text">
+                    <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Red%20Team/OSINT">Learn how to do OSINT</a>
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/cloud.png" alt="design icon" width="20">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Cloud</h4>
+                  <p class="service-item-text">
+                    <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Red%20Team/Cloud">Learn how to hack cloud environment</a>
+                  </p>
+                </div>
+              </li>
+  
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/currency_bitcoin.png" alt="design icon" width="20">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Blockchain</h4>
+                  <p class="service-item-text">
+                    <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Red%20Team/Blockchain">Learn how to hack Blockchain</a>
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="separator"></div>
+          
+            <h4 class="h4 service-title">Topic related to Blue Team</h4>
+  
+            <ul class="service-list">
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img src="./assets/images/undo.png" alt="design icon" width="20">
+                  </div>
+    
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Reverse Engineering</h4>
+                    <p class="service-item-text">
+                      <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Blue%20Team/Reverse%20Engineering">Learn how to do Reverse Engineering</a>
+                    </p>
+                  </div>
+                </li>
+    
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img src="./assets/images/local_fire_department.png" alt="design icon" width="20">
+                  </div>
+    
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Incident Response</h4>
+                    <p class="service-item-text">
+                      <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Blue%20Team/Incident%20Response">Learn how to do Incident Response</a>
+                    </p>
+                  </div>
+                </li>
+  
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img src="./assets/images/radar.png" alt="design icon" width="20">
+                  </div>
+    
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Threat Hunting</h4>
+                    <p class="service-item-text">
+                      <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Blue%20Team/Threat%20Hunting">Learn how to do Threat Hunting</a>
+                    </p>
+                  </div>
+                </li>
+    
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img src="./assets/images/search.png" alt="design icon" width="20">
+                  </div>
+    
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Forensics</h4>
+                    <p class="service-item-text">
+                      <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Blue%20Team/Forensics">Learn how to do Forensics</a>
+                    </p>
+                  </div>
+                </li>
+            </ul>
+
+            <div class="separator"></div>
+
+            <h4 class="h4 service-title">Other Topics</h4>
+  
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/description.png" alt="design icon" width="20">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Notes</h4>
+                  <p class="service-item-text">
+                    <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Notes">Read TuTorials from NTHW Team</a>
+                  </p>
+                </div>
+              </li>
+  
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/radio.png" alt="design icon" width="20">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Radio Frequency Hacking</h4>
+                  <p class="service-item-text">
+                    <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Black%20Team/Radio%20Frequency">Learn how to hack RF</a>
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/deployed_code.png" alt="design icon" width="20">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Platforms</h4>
+                  <p class="service-item-text">
+                    <a href="https://github.com/notthehiddenwiki/NTHW/blob/main/CTF%20Platforms/links.md">Platforms where you can learn security</a>
+                  </p>
+                </div>
+              </li>
+  
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/laptop.png" alt="design icon" width="20">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Programming</h4>
+                  <p class="service-item-text">
+                    <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Programming">Learn Programming</a>
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/memory.png" alt="design icon" width="20">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Hardware</h4>
+                  <p class="service-item-text">
+                    <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/Hardware">Learn how to hack Hardware</a>
+                  </p>
+                </div>
+              </li>
+  
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/all_inclusive.png" alt="design icon" width="20">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">DevSecOps</h4>
+                  <p class="service-item-text">
+                    <a href="https://github.com/notthehiddenwiki/NTHW/tree/main/DevSecOps">Learn topics related to DevSecOps</a>
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/help_center.png" alt="design icon" width="20">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Much more</h4>
+                  <p class="service-item-text">
+                    <a href="https://github.com/notthehiddenwiki/NTHW">...</a>
+                  </p>
+                </div>
+              </li>
+            </ul>  
+          </section>
+        </section>
+
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </section>
+        </div>
+      </article>
+
+      <article class="about" data-page="hall of fame">
+        <header>
+          <h2 class="h2 article-title">🏆 Hall Of Fame</h2>
+        </header>
+        <h4 class="h4 service-title">List of people who created the link database</h4>
+        <section class="about-text">
+          <p>
+            <span>&#8226; <b>miblak</b> - <a href="https://www.linkedin.com/in/michal-blaszczak/">LinkedIn</a> / <a href="https://discordapp.com/users/854806814573985853">Discord</a> / <a href="https://app.hackthebox.com/profile/1246594">HTB</a></span>
+            <span>&#8226; <b>d4xc</b> - <a href="mailto:d4xc@airmail.cc">Mail</a> / <a href="https://dcwikla.pl/">Website</a> / <a href="https://www.linkedin.com/in/dcwikla/">LinkedIn</a></span>
+            <span>&#8226; <b>NOMAD</b> - <a href="https://pl.linkedin.com/in/marcinmotwicki">LinkedIn</a> / <a href="https://marcinmotwicki.com/">Website</a></span>
+            <span>&#8226; <b>M. Kucharskov</b> - <a href="https://kucharskov.pl/">Website</a> / <a href="https://github.com/Kucharskov">GitHub</a></span> 
+            <span>&#8226; <b>OtterSec</b> - <a href="https://www.linkedin.com/in/riccardo-miani/">LinkedIn</a></span>
+            <span>&#8226; <b>Lasq</b> - <a href="https://www.linkedin.com/in/lukasz-lamparski/">LinkedIn</a> / <a href="https://malfind.com/">Website</a></span>
+            <span>&#8226; <b>Neonito</b> - <a href="https://github.com/NEONITO">GitHub</a> / <a href="https://pastebin.com/Qg0a2jKC">Website</a></span>
+            <span>&#8226; <b>ruycr4ft</b> - <a href="https://app.hackthebox.com/profile/1253217">HTB</a> / <a href="https://twitter.com/ruycr4ft">Twitter</a> / <a href="https://github.com/ruycr4ft">GitHub</a> / <a href="https://ruycr4ft.github.io/">Website</a> / <a href="https://itch.io/profile/ruycraft1514">Itch.io</a></span> 
+            <span>&#8226; <b>Tyranpl</b> - <a href="https://www.linkedin.com/in/%C5%82ukaszkubiak/">LinkedIn</a></span>
+            <span>&#8226; <b>Outsider</b> - <a href="https://www.linkedin.com/in/michal-gilewicz1/">LinkedIn</a></span>
+            <span>&#8226; <b>syl</b> - <a href="https://sy1.sh/">Website</a></span>
+            <span>&#8226; <b>Mario22</b> - <a href="https://www.linkedin.com/in/mariusz-wilczy%C5%84ski/">LinkedIn</a></span> 
+            <span>&#8226; <b>derve_</b> </span>
+            <span>&#8226; <b>ArloBlick</b> - <a href="https://www.linkedin.com/in/chojnowskigrzegorz/">LinkedIn</a> / <a href="https://chojnowski.it/">Website</a></span>
+            <span>&#8226; <b>NLTE</b> - <a href="https://app.hackthebox.com/users/260094">HTB</a></span>
+            <span>&#8226; <b>Wile</b> </span> 
+            <span>&#8226; <b>morgnet</b> - <a href="https://pl.linkedin.com/in/piotr-kaminski-1336b012">LinkedIn</a></span>
+            <span>&#8226; <b>Karmaz</b> - <a href="https://www.linkedin.com/in/karol-mazurek-849975183/">LinkedIn</a> / <a href="https://karol-mazurek95.medium.com/">Website</a> / <a href="https://twitter.com/karmaz95">Twitter</a> /  <a href="https://github.com/karmaz95">GitHub</a></span>
+            <span>&#8226; <b>Tom</b> - <a href="https://tryhackme.com/p/BezimiennyTom">THM</a></span>
+            <span>&#8226; <b>Zevisto</b> </span> 
+            <span>&#8226; <b>DawidS</b> - <a href="https://www.linkedin.com/in/dawid-stuzynski/">LinkedIn</a></span>
+            <span>&#8226; <b>iptom</b> </span>
+            <span>&#8226; <b>Mrufkojat</b> </span>
+            
+          </p>
+        </section>
+
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </section>
+        </div>
+      </article>
+
+      <article class="about" data-page="cybersecurity stars">
+        <header>
+          <h2 class="h2 article-title">⭐ Stars ⭐</h2>
+        </header>
+
+        <section class="about-text">
+          <h4 class="h4 service-title">List of people & channels which worth following</h4>
+          <p>
+            <span>&#8226; <b>Gynvael Coldwind</b> - <a href="https://www.youtube.com/user/gynvaelcoldwind">YouTube</a> / <a href="https://twitter.com/gynvael">Twitter</a></span>
+            <span>&#8226; <b>Hasherezade</b> - <a href="https://www.youtube.com/channel/UCNWVswPNgn5kutPNa5sprkg">YouTube</a> / <a href="https://twitter.com/hasherezade">Twitter</a></span>
+            <span>&#8226; <b>John Hammond</b> - <a href="https://www.youtube.com/@_JohnHammond">YouTube</a> / <a href="https://twitter.com/_JohnHammond">Twitter</a></span>
+            <span>&#8226; <b>Lasq</b> - <a href="https://www.youtube.com/c/MalfindLabs">YouTube</a> / <a href="https://twitter.com/lasq88">Twitter</a></span>
+            <span>&#8226; <b>MalDev Academy</b> - <a href="https://twitter.com/MalDevAcademy">Twitter</a></span>
+            <span>&#8226; <b>mgeeky</b> - <a href="https://twitter.com/mariuszbit">Twitter</a></span>
+            <span>&#8226; <b>Foxtrot Charlie</b> - <a href="https://twitter.com/foxtrot_0x4fult">Twitter</a></span>
+            <span>&#8226; <b>mr.d0x</b> - <a href="https://twitter.com/mrd0x">Twitter</a></span>
+            <span>&#8226; <b>vx-underground</b> - <a href="https://twitter.com/vxunderground">Twitter</a></span>
+            <span>&#8226; <b>Grzegorz Tworek</b> - <a href="https://www.youtube.com/channel/UC57ReegGY3tk69I-bLpjdEw">YouTube</a> / <a href="https://twitter.com/0gtweet">Twitter</a></span>
+            <span>&#8226; <b>Michał Bentkowski</b> - <a href="https://twitter.com/SecurityMB">Twitter</a></span>
+            <span>&#8226; <b>NetworkChuck</b> - <a href="https://www.youtube.com/channel/UC9x0AN7BWHpCDHSm9NiJFJQ">YouTube</a>  / <a href="https://twitter.com/networkchuck">Twitter</a> / <a href="https://www.instagram.com/networkchuck/">Instagram</a></span>
+            <span>&#8226; <b>David Bombal</b> - <a href="https://www.youtube.com/@davidbombal">YouTube</a> / <a href="https://www.instagram.com/davidbombal/">Instagram</a></span>
+            <span>&#8226; <b>Rana Khalil</b> - <a href="https://www.youtube.com/@RanaKhalil101">YouTube</a></span>
+            <span>&#8226; <b>IppSec</b> - <a href="https://www.youtube.com/@ippsec">YouTube</a> / <a href="https://twitter.com/ippsec">Twitter</a></span>
+            <span>&#8226; <b>NahamSec</b> - <a href="https://www.youtube.com/@NahamSec">YouTube / <a href="https://www.instagram.com/nahamsec/">Instagram</a></a></span>
+            <span>&#8226; <b>Professor Messer</b> - <a href="https://www.youtube.com/@professormesser">YouTube</a></span>
+            <span>&#8226; <b>Bug Bounty Reports Explained</b> - <a href="https://www.youtube.com/@BugBountyReportsExplained">YouTube</a> / <a href="https://twitter.com/gregxsunday">Twitter</a> / <a href="https://www.instagram.com/gregxsunday/">Instagram</a></span>
+            <span>&#8226; <b>HackerOne</b> - <a href="https://www.youtube.com/@HackerOneTV">YouTube</a></span>
+            <span>&#8226; <b>HackerSploit</b> - <a href="https://www.youtube.com/HackerSploit">YouTube</a></span>
+            <span>&#8226; <b>LiveOverflow</b> - <a href="https://www.youtube.com/@LiveOverflow">YouTube</a></span>
+            <span>&#8226; <b>CTF School</b> - <a href="https://www.youtube.com/c/CTFSchool">YouTube</a></span>
+            <span>&#8226; <b>Damian Naprawa</b> - <a href="https://wkontenerach.pl/">Website</a></span>
+            <span>&#8226; <b>Jakub Przepióra</b> - <a href="https://www.youtube.com/channel/UCJE4aNuiSMo-6daasSfu-0w">YouTube</a> / <a href="https://www.linkedin.com/in/jakub-przepiora">LinkedIn</a></span>
+            <span>&#8226; <b>Sumsub</b> - <a href="https://www.youtube.com/@Sumsubcom">YouTube</a> / <a href="https://sumsub.com/">Website</a></span>
+            <span>&#8226; <b>Critical Thinking</b> - <a href="https://www.youtube.com/@criticalthinkingpodcast">YouTube</a></span>
+            <span>&#8226; <b>Adamski CTF</b> - <a href="https://www.youtube.com/c/AdamskiCTF">YouTube</a></span>
+            <span>&#8226; <b>OALabs</b> - <a href="https://www.youtube.com/c/OALabs">YouTube</a> / <a href="https://github.com/OALabs">GitHub</a></span>
+          </p>
+        </section>
+
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </section>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
